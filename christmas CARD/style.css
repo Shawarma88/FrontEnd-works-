@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    font-family: 'Poppins', sans-serif;
+    align-items: center;
+    justify-content: center;
+    perspective: 1000px;
+}
+.container{
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    /*background: cornflowerblue;*/
+}
+.card{
+    min-height: 80vh;
+    width: 35rem;
+    background: #36454f;
+    padding: 0 5rem;
+    border-radius: 30px;
+    transform-style: preserve-3d;
+    box-shadow: 0px 20px 20px rgba(0,0,0,0.2), 0px 0px 50px rgba(0,0,0,0.2);
+}
+.x-mas{
+    min-height: 35vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.75s ease;
+}
+.x-mas img{
+    width: 20rem;
+    
+}
+.card h2{
+    font-size: 1.5rem;
+    text-align: center;
+    letter-spacing: 2px;
+    margin-bottom: 2.5rem;
+    color:rgb(240, 6, 6) ;
+    transition: all 0.75s ease;
+}
+.bottompic{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.75s ease; 
+}
+.bottompic img{
+    width: 35rem; 
+    
+}

@@ -1,0 +1,205 @@
+*{
+    background: rgb(0, 0, 0);
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    min-height: 100vh;
+    z-index: 999;
+    
+}
+.pongal{
+    display: flex;
+    align-items : center;
+    justify-content: center;
+    position: absolute;
+    text-align: center;
+    top: 100px;
+    left: 690px;
+}
+h1{
+    font-family: sans-serif;
+    font-size: 50px;
+    background: #fe8c00;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #f83600, #fe8c00);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #f83600, #fe8c00); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    letter-spacing: 6px;
+}
+.thee{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: space-between;
+    width: 25px;
+    transform: rotate(45deg);
+    position: absolute;
+    top: 700px;
+    left: 810px;
+}
+.nerupu{
+    position: relative;
+    transform-origin: center bottom;
+}
+
+.flame{
+    position: absolute;
+    bottom: 0;
+    border-radius: 0% 50% 50% 50%;
+    transform: rotate(90deg) scale(0.8, 1.1);
+    animation-name: flicker;
+    animation-duration: 2ms;
+    animation-delay: 200ms;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+    
+}
+@keyframes flicker{
+    0%
+    {
+        transform: rotate(0deg) ;
+    }
+    25%
+    {
+        transform:rotate(-1deg) scaleY(1.2);
+    }
+    50%
+    {
+        transform: rotate(1deg) scaleY(0.9);
+    }
+    80%
+    {
+        transform: rotate(-1deg);
+    }
+    100%
+    {
+        transform: rotate(1deg);
+    }
+}
+
+.red{
+    width: 80px;
+    height: 65px;
+    background: rgb(255, 137, 1);
+    box-shadow: 0 0 9px rgb(255, 137, 1);
+}
+.orangered{
+    left: 5px;
+    width: 70px;
+    height: 50px;
+    background: rgb(255, 185, 54);
+    box-shadow: 0 0 30px rgb(255, 185, 54);
+}
+.orange{
+    left: 10px;
+    bottom: 7.5px;
+    width: 60px;
+    height: 40px;
+    background: rgb(241, 170, 38);
+    box-shadow: 0 0 30px rgb(241, 170, 38);
+}
+.yellow{
+    left: 15px;
+    bottom: 10px;
+    width: 45px;
+    height: 32.5px;
+    background: rgb(238, 238, 58);
+    box-shadow: 0 0 30px rgb(238, 238, 58);
+}
+
+.paana{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 490px;
+    left: 780px;
+    transform: scale(1.5);
+
+}
+.pot {
+    display: block;
+    width: 10rem;
+    height: 8rem;
+    background:  brown;
+    border-radius: 2.5rem 2.5rem 4rem 4rem;
+ }
+
+.pongi {
+    display : flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 360px;
+    left: 700px;
+}
+.foam {
+    width: 250px;
+    height: 100px;
+    background:#fff;
+    border-radius: 100px 100px;
+    box-shadow: 0 0 0 10px white;
+    transform: scale(0.5);
+    animation: move 8s  ease;
+  }
+  .foam::after,
+  .foam::before{
+    content:"";
+    position: relative;
+    display: inline-block;
+    background: inherit;
+    border-radius: inherit;
+  }
+  .foam::after{
+    top: -60px;
+    left: 10px;
+    width: 100px;
+    height: 120px;
+  }
+  .foam::before{
+    width: 100px;
+    height: 120px;
+    top: -25px;
+    left: 40px;
+  }
+  @keyframes move{
+    0%{
+          transform: translate(0) scale(0.5);
+      }
+    10%{
+        transform: translate(25px) scale(0.5);
+    }
+    20%{
+        transform: translate(50px) scale(0.5);
+        }
+    30%{
+        transform: translate(75px) scale(0.5);
+        }
+    40%{
+        transform: translate(100px) scale(0.5);
+        }
+    50%{
+        transform: translate(125px) scale(0.5);
+        }
+    60%{
+        transform: translate(150px) scale(0.5);
+        }
+    70%{
+        transform: translate(175px) rotate(35deg) translateX(20px) scale(0.5);
+        }
+    80%{
+        transform: translate(185px) rotate(45deg) translateX(35px) scale(0.5);
+        }
+    90%{
+        transform: translate(195px) rotate(60deg) translateX(50px) scale(0.5);
+        }
+    100%{
+        transform: translate(200px) rotate(90deg) translateX(80px) scale(0.5);
+    }
+  }

@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url(image/night.jpg);
+    /*background: #01162E;*/
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+.text{
+    min-height: 75vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+    color: gold;
+    animation: floating 2s ease-in-out infinite;
+}
+
+@keyframes floating{
+    0%, 100% {
+        transform: translateY(0px);
+      }
+      25%
+      {
+        transform: translateY(50px);
+      }
+      75%
+      {
+        transform: translateY(-50px);
+      }
+}
+
+h1{
+    font-size: 4rem;
+}
+h3{
+   font-size: 2rem;
+}
+.firework{
+    position: absolute;
+}
+.pattas{
+    position: absolute;
+    width: 5px;
+    height: 80px;
+    /*background-color: black;*/
+    transform-origin: 50% 115%;
+    overflow: hidden;
+}
+
+.pattas:nth-child(1){
+    transform: rotate(0deg);
+}
+.pattas:nth-child(2){
+    transform: rotate(30deg);
+}
+.pattas:nth-child(3){
+    transform: rotate(60deg);
+}
+.pattas:nth-child(4){
+    transform: rotate(90deg);
+}
+.pattas:nth-child(5){
+    transform: rotate(120deg);
+}
+.pattas:nth-child(6){
+    transform: rotate(150deg);
+}
+.pattas:nth-child(7){
+    transform: rotate(180deg);
+}
+.pattas:nth-child(8){
+    transform: rotate(210deg);
+}
+.pattas:nth-child(9){
+    transform: rotate(240deg);
+}
+.pattas:nth-child(10){
+    transform: rotate(270deg);
+}
+.pattas:nth-child(11){
+    transform: rotate(300deg);
+}
+.pattas:nth-child(12){
+    transform: rotate(330deg);
+}
+
+.pattas::before{
+    content: "";
+    background-color: gold;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 90%;
+    height: 40px;
+    animation: explostion 2s ease-in-out infinite;
+}
+
+@keyframes explostion{
+    0%{
+        top: 90%;
+    }
+    50%{
+        top: 10%;
+    }
+    100%{
+        top: -50%;
+    }
+}
+
+
+#firwork-1{
+    left: 50%;
+    top: 50%;
+    transform: scale(0.9);
+}
+#firwork-2{
+    left: 40%;
+    top: 40%;
+    transform: scale(0.8);
+}
+#firwork-3{
+    left: 35%;
+    top: 25%;
+    transform: scale(0.75);
+}
+#firwork-4{
+    left: 65%;
+    top: 25%;
+    transform: scale(1);
+}
+#firwork-5{
+    left: 30%;
+    top: 60%;
+    transform: scale(0.69);
+}
+#firwork-6{
+    left: 65%;
+    top: 65%;
+    transform: scale(0.5);
+}
+

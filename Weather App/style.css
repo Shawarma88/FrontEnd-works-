@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Poppins',sans-serif;
+    color: aliceblue;
+    user-select: none;
+    background: linear-gradient(to top,#45CBF0, #A8EB12 );
+}
+h3{
+    font-size: 4rem;
+}
+.location-section,
+.temperature-section{
+    min-height: 40vh;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+}
+.location-section h1{
+    letter-spacing: 3px;
+}
+.temperature-section{
+    flex-direction: column;
+}
+.degree-section{
+    display: flex;  
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.degree-section:hover{
+    color: rgb(92, 92, 92);
+}
+.degree-section h2{
+    font-size: 40px;
+    letter-spacing: 2px;
+    margin-right: 10px;
+}
+.degree-section span{
+    font-size: 35px;
+}
+p{
+    font-size: 25px;
+    margin-bottom: 5rem;
+}

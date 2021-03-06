@@ -1,0 +1,58 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: url(bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+}
+.log-in{
+    width: 300px;
+    position: absolute ;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+}
+.log-in h1{
+    float: left;
+    font-size: 50px;
+    border-bottom: 5px solid #03a9f480;
+    margin-bottom: 50px;
+    padding: 13px 0;
+}
+.log-in .text-box{
+    width: 100%;
+    overflow: hidden;
+    font-size: 20px;
+    padding: 10px 0;
+    margin: 10px 0;
+    border-bottom: 5px solid #03a9f480;
+    
+}
+.text-box i{
+    width: 26px;
+    float: left;
+    text-align: center;
+}
+.text-box input{
+    border: none;
+    outline: none;
+    background: none;
+    color: white;
+    font-size: 20px;
+    float: left;
+    margin: 0 20px;
+    width: 90px;
+
+}
+.log-in button{
+    width: 100%;
+    background: none;
+    border: 5px solid #03a9f480;
+    font-size: 30px;
+    color: white;
+    margin: 15px 0;
+}
